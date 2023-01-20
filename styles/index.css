@@ -6,12 +6,26 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: var(--fonts);
+    font-weight: bold;
+    color: var(--h-color)
+}
+
 h2 {
     display: inline-block;
     font-family: var(--fonts);
     font-weight: bold;
-    color: rgb(69, 96, 96);
+    color: var(--h-color)
 }
+
+h4 {
+    font-family: var(--fonts);
+    font-weight: bold;
+    color: var(--h-color)
+}
+
+
 
 li {
     list-style-type: none;
@@ -178,26 +192,43 @@ nav li {
     border-radius: 40px;
 }
 
-.skills-section {
+.skill-section {
     margin-top: 30px;
-    margin-left: 150px;
 }
 
-.skills-section__about {
+.skill-section__describing {
     background-color: var(--light-bg-color) ;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
 }
 
-.skills-section__about img {
+.soft-skill {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.soft-skill__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hard-skill {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hard-skill img {
     transition: 1s;
 }
 
-.skills-section__about img:hover {
+.hard-skill img:hover {
     transform: scale(1.5);
 }
 
@@ -221,6 +252,16 @@ nav li {
     width: 20%;
     margin-left: auto;
     background: gray;
+}
+
+.experience-section {
+    margin-top: 30px;
+}
+
+.experience-section__block {
+    display: flex;
+    background-color: var(--light-bg-color) ;
+    border-radius: 10px;
 }
 
 
