@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.blackTheme {
+    background-color: var(--black-theme);
+    color: white;
+}
+
 h1 {
     font-family: var(--fonts);
     font-weight: bold;
@@ -25,7 +30,9 @@ h4 {
     color: var(--h-color)
 }
 
-
+span {
+    margin-right: 20px;
+}
 
 li {
     list-style-type: none;
@@ -45,6 +52,11 @@ p {
 button {
     background: none;
     border: none;
+    margin-left: 20px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 body {
@@ -81,17 +93,9 @@ header .header__info {
 
 }
 
-header .header__info span {
-
-}
-
 header .header__info h3 {
     margin: 0 30px;
     font-family: var(--fonts);
-}
-
-header .header__info button {
-    
 }
 
 nav ul {
@@ -99,10 +103,6 @@ nav ul {
     list-style: none;
     gap: 30px;
     
-}
-
-nav li {
-
 }
 
 .intro-section {
@@ -133,7 +133,7 @@ nav li {
     display: none;
     position: absolute;
     align-items: center;
-    top: 20%;
+    top: 12%;
     right: 0px;
     cursor: pointer;
     transform: rotate(0);
@@ -262,6 +262,31 @@ nav li {
     display: flex;
     background-color: var(--light-bg-color) ;
     border-radius: 10px;
+    justify-content: space-around;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.it-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
