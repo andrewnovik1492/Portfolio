@@ -4,11 +4,17 @@ const moonSvg = document.querySelector('.dark');
 const sunSvg = document.querySelector('.light');
 const buttonTheme = document.querySelector('.header__info button')
 
-let currentTheme = 'light'
+let currentTheme = localStorage.getItem('theme')
 
 document.addEventListener('DOMContentLoaded', () => {
     moonSvg.style.display = 'none';
     showProgressBar()
+    if(currentTheme == 'dark') {
+      changeTheme()
+      sunSvg.style.display = 'none';
+      moonSvg.style.display = 'block';
+      currentTheme = 'dark';
+    }
 })
 arrow.addEventListener('click', showInfo)
 
@@ -31,6 +37,7 @@ buttonTheme.addEventListener('click', () => {
         moonSvg.style.display = 'none';
         sunSvg.style.display = 'block'; 
     }
+    localStorage.setItem('theme', currentTheme)
 } )
 
 function showProgressBar() {
